@@ -1,4 +1,4 @@
-import { Header } from '../Header'
+import { Header } from '../Header';
 import { Home } from '../Home';
 import { AboutMe } from '../AboutMe';
 import { Projects } from '../Projects';
@@ -9,7 +9,10 @@ function App() {
   return (
     <>
       <Header />
-
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Contact />
     </>
   );
 }

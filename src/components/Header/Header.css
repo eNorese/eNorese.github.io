@@ -2,4 +2,27 @@ header {
     width: 100%;
     height: 6em;
     background: indigo;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 6em;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    background: darkcyan;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.navigation {
+    display: none;
+}
+
+.menu {
+    background: salmon;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
