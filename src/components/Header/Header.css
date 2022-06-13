@@ -1,7 +1,7 @@
 header {
     width: 100%;
     height: 6em;
-    background: indigo;
+    background: #121216;
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 6em;
@@ -9,20 +9,28 @@ header {
 }
 
 .logo {
-    background: darkcyan;
     grid-column: 1/2;
     grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
 }
 
 .navigation {
     display: none;
 }
 
-.menu {
+.menu-btn {
     background: salmon;
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
+    color: #fff;
 }

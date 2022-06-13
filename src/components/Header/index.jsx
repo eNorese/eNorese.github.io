@@ -4,8 +4,7 @@ function Header() {
     return (
         <header>
             <div className='logo'>
-                LOGO
-                <img src="" alt="" />
+                <img src='../../img/enorese-logo.png' alt='enorese.dev' />
             </div>
             <nav className='navigation nav-hidden'>
                 <ul>
@@ -14,7 +13,7 @@ function Header() {
                     <li>Contacto</li>
                 </ul>
             </nav>
-            <span className='menu'>X</span>
+            <button className='menu-btn'><span className='icon-menu'></span></button>
         </header>
     );
 }
