@@ -2,8 +2,8 @@ import './Projects.css';
 
 function Projects() {
     return (
-        <section>
-
+        <section className='Projects'>
+            PROJECTS
         </section>
     );
 }

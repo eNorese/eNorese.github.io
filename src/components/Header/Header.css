@@ -6,6 +6,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 6em;
     grid-template-rows: 1fr;
+    position: fixed;
+    top: 0;
 }
 
 .logo {

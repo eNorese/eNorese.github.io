@@ -2,8 +2,8 @@ import './Home.css';
 
 function Home() {
     return (
-        <section>
-
+        <section className='Home'>
+            HOME
         </section>
     );
 }

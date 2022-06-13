@@ -2,8 +2,8 @@ import './Contact.css';
 
 function Contact() {
     return (
-        <section>
-
+        <section className='Contact'>
+            CONTACT
         </section>
     );
 }
