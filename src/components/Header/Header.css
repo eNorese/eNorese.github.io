@@ -11,6 +11,7 @@ header {
 }
 
 .logo {
+    width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
@@ -23,7 +24,26 @@ header {
 }
 
 .navigation {
-    display: none;
+    width: 100%;
+    position: fixed;
+    top: 6em;
+}
+
+.navigation ul li {
+    padding: 1em;
+    font-size: 1.6em;
+    background: blue;
+    text-align: center;
+}
+
+.nav-hidden {
+    margin-left: -100%;
+    transition: all .4s ease;
+}
+
+.nav-visible {
+    margin-left: 0;
+    transition: all .4s ease;
 }
 
 .menu-btn {
@@ -35,4 +55,8 @@ header {
     align-items: center;
     font-size: 2em;
     color: #fff;
+}
+
+.menu-btn:hover { 
+    cursor: pointer;
 }
