@@ -1,20 +1,9 @@
-import { Header } from '../Header';
-import { Home } from '../Home';
-import { AboutMe } from '../AboutMe';
-import { Projects } from '../Projects';
-import { Contact } from '../Contact';
-import { Foot } from '../Foot';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Contact />
-      <Foot />
+      <h1>Portfolio</h1>
     </>
   );
 }
