@@ -20,11 +20,20 @@ function Header() {
           <li><HiLightBulb /> Proyectos</li>
           <li><FaUserCheck /> Contacto</li>
         </ul>
+        <div className='header__nav__options'>
+          <div className='header__nav_options__theme'>
+            Tema
+          </div>
+
+          <div className='header__nav__options__lang'>
+            Idioma
+          </div>
+        </div>
       </nav>
 
-      <div className='header__menu-button'>
+      <button className='header__menu-button'>
         <AiOutlineMenu />
-      </div>
+      </button>
     </header>
   );
 }

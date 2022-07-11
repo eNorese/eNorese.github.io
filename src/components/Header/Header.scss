@@ -1,16 +1,20 @@
-$header-background: #F1F1F1;
+@import "../App/App.scss";
 
 .header {
   width: 100%;
   height: 60px;
-  background: $header-background;
-  display: flex;
+  background: $light-color;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-between;
 
   &__logo {
-    width: 12.5em;
-    background: orange;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .6em;
   
     &__img {
       width: 100%;
@@ -18,10 +22,37 @@ $header-background: #F1F1F1;
   }
 
   &__nav {
+    width: 100%;
     background: green;
+    position: fixed;
+    top: 60px;
+
+    ul li{
+      background: #fff;
+      padding: .8em;
+      font-size: 1.2em;
+      color: $first-color;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        margin-right: .5em;;
+      }
+    }
+
+    &__options {
+      width: 100%;
+      background: orange;
+    }
   }
 
   &__menu-button {
-    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    padding: .5em;
   }
 }

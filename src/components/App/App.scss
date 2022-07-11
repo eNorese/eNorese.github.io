@@ -4,6 +4,7 @@ $first-color: #1363DF;
 $second-color: #001330;
 $third-color: #47B5FF;
 $fourth-color: #D9F0FF;
+$light-color: #D9F0FF;
 $primary-font: 'Work Sans', sans-serif;
 $secondary-font: 'Heebo', sans-serif;
 
@@ -15,23 +16,28 @@ $secondary-font: 'Heebo', sans-serif;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
+
 body {
 	line-height: 1;
   width: 100%;
 	font-size: 16px;
 	font-family: $primary-font;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
