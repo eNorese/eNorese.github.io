@@ -1,9 +1,10 @@
-import './App.css';
+import { Header } from '../Header';
+import './App.scss';
 
 function App() {
   return (
     <>
-      <h1>Portfolio</h1>
+      <Header />
     </>
   );
 }

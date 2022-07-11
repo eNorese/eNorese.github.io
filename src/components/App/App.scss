@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Work+Sans:wght@300;400;500;600&display=swap";
+
+$primary-font: 'Work Sans', sans-serif;
+$secondary-font: 'Heebo', sans-serif;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,10 +12,11 @@
 	box-sizing: border-box;
 }
 body {
+	min-height: 200vh;
 	line-height: 1;
   width: 100%;
 	font-size: 16px;
-	font-family: 'JetBrains Mono', monospace;
+	font-family: $primary-font;
 }
 ol, ul {
 	list-style: none;
