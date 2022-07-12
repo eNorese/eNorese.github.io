@@ -36,21 +36,23 @@ function Header() {
           </li>
         </ul>
 
-        <PageSettings
-          key={1}
-          title='Tema'
-          leftImage={sun}
-          rightImage={moon}
-          switchId='switch-theme'
-        />
-        <hr className='setting-divider' />
-        <PageSettings
-          key={2} 
-          title='Idioma'
-          leftImage={spanish}
-          rightImage={english}
-          switchId='switch-lang'
-        />
+        <div className='header_nav_settings'>
+          <PageSettings
+            key={1}
+            title='Tema'
+            leftImage={sun}
+            rightImage={moon}
+            switchId='switch-theme'
+          />
+          <hr className='setting-divider' />
+          <PageSettings
+            key={2} 
+            title='Idioma'
+            leftImage={spanish}
+            rightImage={english}
+            switchId='switch-lang'
+          />
+        </div>
 
       </nav>
 

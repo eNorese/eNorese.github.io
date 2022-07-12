@@ -23,16 +23,8 @@
       justify-content: space-between;
       align-items: center;
 
-      span {
-        color: $third-color;
-      }
-
       img {
         width: 32px;
-      }
-
-      input[type="checkbox"] {
-        padding: 2px;
       }
 
       &__switch {
