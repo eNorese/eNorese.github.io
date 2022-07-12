@@ -14,12 +14,23 @@ function Header() {
 
       <nav className='header__nav'>
         <ul>
-          <li><AiFillHome /> Inicio</li>
-          <li><FaRegAddressCard /> Sobre Mí</li>
-          <li><IoIosRocket /> Experiencia</li>
-          <li><HiLightBulb /> Proyectos</li>
-          <li><FaUserCheck /> Contacto</li>
+          <li>
+            <span><AiFillHome /> Inicio</span>
+          </li>
+          <li>
+            <span><FaRegAddressCard /> Sobre Mí</span>
+          </li>
+          <li>
+            <span><IoIosRocket /> Experiencia</span>
+          </li>
+          <li>
+            <span><HiLightBulb /> Proyectos</span>
+          </li>
+          <li>
+            <span><FaUserCheck /> Contacto</span>
+          </li>
         </ul>
+        
         <div className='header__nav__options'>
           <div className='header__nav_options__theme'>
             Tema

@@ -10,6 +10,12 @@ $menu-color-hover: #ECECEC;
 $primary-font: 'Work Sans', sans-serif;
 $secondary-font: 'Heebo', sans-serif;
 
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 * {
 	margin: 0;
 	padding: 0;

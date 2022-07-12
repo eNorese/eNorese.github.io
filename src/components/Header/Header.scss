@@ -34,25 +34,32 @@
       align-items: center;
 
       li{
-        width: 11em;
-        padding: .8em;
+        width: 100%;
         font-size: 1.2em;
         color: $first-color;
         text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         transition: all .3s ease;
-  
-        &:first-child {
+
+        &:hover {
+          background: $menu-color-hover;
+          cursor: pointer;
+        }
+
+        span {
+          width: 10em;
+          padding: .8em;
+          @include flex-center;
+        }
+
+        &:first-child span {
           border-bottom: 3px solid $first-color;
         }
 
         svg {
           margin-right: .5em;;
+        }
       }
-    }
-
     }
 
     &__options {
@@ -67,5 +74,9 @@
     align-items: center;
     font-size: 2em;
     padding: .5em;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
