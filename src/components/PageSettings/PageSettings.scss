@@ -1,23 +1,24 @@
 @import "../App/App.scss";
 
 .options {
-  // background: blue;
   margin: 5px;
   padding: 2px;
   padding-top: .8em;
   @include flex-center;
 
   &__settings {
-    width: 60%;
-    // background: pink;
+    width: 50%;
     padding: 2px;
 
     h4 {
       text-align: center;
+      padding: 2px;
+      color: #303030;
     }
 
     &__content {
-      // background: violet;
+      width: 80%;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -31,8 +32,48 @@
       }
 
       input[type="checkbox"] {
-        // background: lawngreen;
         padding: 2px;
+      }
+
+      &__switch {
+        padding: 3px;
+
+        &__label {
+          display: inline-block;
+          width: 55px;
+          height: 30px;
+          background: #aaa;
+          border-radius: 100px;
+          position: relative;
+          cursor: pointer;
+        }
+
+        #switch-theme:checked~ &__label,
+        #switch-lang:checked~ &__label {
+          background: $fifth-color;
+        }
+
+        #switch-theme:checked~ &__label:after,
+        #switch-lang:checked~ &__label:after {
+          left: 28px;
+        }
+
+        #switch-theme,
+        #switch-lang {
+          display: none;
+        }
+
+        &__label:after {
+          content: '';
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          background: #fff;
+          border-radius: 100px;
+          top: 4px;
+          left: 5px;
+          transition: .3s;
+        }
       }
     }
   }

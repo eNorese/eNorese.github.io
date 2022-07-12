@@ -36,20 +36,20 @@ function Header() {
           </li>
         </ul>
 
-        <PageSettings 
+        <PageSettings
+          key={1}
           title='Tema'
-          leftText='claro'
-          rightText='oscuro'
           leftImage={sun}
           rightImage={moon}
+          switchId='switch-theme'
         />
         <hr className='setting-divider' />
-        <PageSettings 
+        <PageSettings
+          key={2} 
           title='Idioma'
-          leftText='ES'
-          rightText='EN'
           leftImage={spanish}
           rightImage={english}
+          switchId='switch-lang'
         />
 
       </nav>
