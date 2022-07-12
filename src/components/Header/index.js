@@ -2,6 +2,7 @@ import { AiOutlineMenu, AiFillHome } from 'react-icons/ai';
 import { FaRegAddressCard, FaUserCheck } from 'react-icons/fa';
 import { IoIosRocket } from 'react-icons/io';
 import { HiLightBulb } from 'react-icons/hi';
+import { PageSettings } from '../PageSettings';
 import logo from '../../assets/enorese-logo.png';
 import './Header.scss';
 
@@ -30,16 +31,10 @@ function Header() {
             <span><FaUserCheck /> Contacto</span>
           </li>
         </ul>
-        
-        <div className='header__nav__options'>
-          <div className='header__nav_options__theme'>
-            Tema
-          </div>
 
-          <div className='header__nav__options__lang'>
-            Idioma
-          </div>
-        </div>
+        <PageSettings />
+        <PageSettings />
+
       </nav>
 
       <button className='header__menu-button'>
