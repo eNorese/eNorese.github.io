@@ -33,6 +33,7 @@ function Header() {
         </ul>
 
         <PageSettings />
+        <hr className='setting-divider' />
         <PageSettings />
 
       </nav>

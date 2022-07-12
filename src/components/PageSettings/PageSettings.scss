@@ -1,0 +1,39 @@
+@import "../App/App.scss";
+
+.options {
+  // background: blue;
+  margin: 5px;
+  padding: 2px;
+  padding-top: .8em;
+  @include flex-center;
+
+  &__settings {
+    width: 60%;
+    // background: pink;
+    padding: 2px;
+
+    h4 {
+      text-align: center;
+    }
+
+    &__content {
+      // background: violet;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        color: $third-color;
+      }
+
+      img {
+        width: 32px;
+      }
+
+      input[type="checkbox"] {
+        // background: lawngreen;
+        padding: 2px;
+      }
+    }
+  }
+}

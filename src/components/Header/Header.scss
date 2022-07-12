@@ -23,12 +23,15 @@
 
   &__nav {
     width: 100%;
-    background: green;
+    background: $light-color-third;
     position: fixed;
     top: 60px;
+    padding-bottom: .5em;
+    border-radius: 0 0 .5em .5em;
+    box-shadow: 0px 6px 10px 0px rgba(26,26,26, .5);
 
     ul {
-      background: #fff;
+      background: $light-color-third;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -79,4 +82,11 @@
       cursor: pointer;
     }
   }
+}
+
+.setting-divider {
+  width: 80%;
+  background: $third-color;
+  border: 1px solid $third-color;
+  margin: .8em auto 0 auto;
 }
