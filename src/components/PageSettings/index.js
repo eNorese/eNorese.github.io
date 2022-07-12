@@ -1,20 +1,16 @@
-import moon from '../../assets/moon.png';
-import sun from '../../assets/sun.png';
-import english from '../../assets/english.png';
-import spanish from '../../assets/spanish.png';
 import './PageSettings.scss';
 
-function PageSettings() {
+function PageSettings({ title, leftText, rightText, leftImage, rightImage }) {
   return (
     <div className='options'>
       <div className='options__settings'>
-        <h4>Tema</h4>
+        <h4>{title}</h4>
         <div className='options__settings__content'>
-          <span>claro</span>
-          <img src={sun} alt='light' />
+          <span>{leftText}</span>
+          <img src={leftImage} alt='light' />
           <input type='checkbox' />
-          <img src={moon} alt='dark' />
-          <span>oscuro</span>
+          <img src={rightImage} alt='dark' />
+          <span>{rightText}</span>
         </div>
       </div>
     </div>

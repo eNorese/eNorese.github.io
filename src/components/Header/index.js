@@ -4,6 +4,10 @@ import { IoIosRocket } from 'react-icons/io';
 import { HiLightBulb } from 'react-icons/hi';
 import { PageSettings } from '../PageSettings';
 import logo from '../../assets/enorese-logo.png';
+import moon from '../../assets/moon.png';
+import sun from '../../assets/sun.png';
+import english from '../../assets/english.png';
+import spanish from '../../assets/spanish.png';
 import './Header.scss';
 
 function Header() {
@@ -32,9 +36,21 @@ function Header() {
           </li>
         </ul>
 
-        <PageSettings />
+        <PageSettings 
+          title='Tema'
+          leftText='claro'
+          rightText='oscuro'
+          leftImage={sun}
+          rightImage={moon}
+        />
         <hr className='setting-divider' />
-        <PageSettings />
+        <PageSettings 
+          title='Idioma'
+          leftText='ES'
+          rightText='EN'
+          leftImage={spanish}
+          rightImage={english}
+        />
 
       </nav>
 
